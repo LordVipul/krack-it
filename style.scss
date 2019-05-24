@@ -1,0 +1,93 @@
+$main_color: #242327;
+$accent_color: #cc5b53;
+$light_color: #ebebeb;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background: $light_color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $main_color;
+  padding: 25px 15%;
+  font-size: 24px;
+  border-bottom: 1px solid $light_color;
+
+  button {
+    border: 2px solid $accent_color;
+    -webkit-appearance: none;
+    background: $main_color;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+
+    cursor: pointer;
+    color: $accent_color;
+  }
+
+  h1 {
+    font-family: "Josefin Sans", sans-serif;
+    color: $light_color;
+    padding-top: 10px;
+    span {
+      color: $accent_color;
+    }
+  }
+
+  .button-container {
+    display: flex;
+
+    .about {
+      button {
+        border: none;
+        color: $accent_color;
+        background: none;
+      }
+    }
+    .external {
+      button {
+        -webkit-appearance: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 30px;
+
+        cursor: pointer;
+        color: $accent_color;
+
+        &:hover,
+        &:active {
+          background: $accent_color;
+          color: $main_color;
+          animation: btn 0.1s linear forwards;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  margin: 0px 15%;
+}
+
+@keyframes btn {
+  from {
+    border: 2px solid $accent_color;
+    color: $main_color;
+    background: $main_color;
+  }
+  to {
+    border: 2px solid $accent_color;
+    color: $main_color;
+    background: $accent_color;
+  }
+}

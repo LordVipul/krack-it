@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background: #ebebeb;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #242327;
+  padding: 25px 15%;
+  font-size: 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+header button {
+  border: 2px solid #cc5b53;
+  -webkit-appearance: none;
+  background: #242327;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  cursor: pointer;
+  color: #cc5b53;
+}
+
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ebebeb;
+  padding-top: 10px;
+}
+
+header h1 span {
+  color: #cc5b53;
+}
+
+header .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .button-container .about button {
+  border: none;
+  color: #cc5b53;
+  background: none;
+}
+
+header .button-container .external button {
+  -webkit-appearance: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  cursor: pointer;
+  color: #cc5b53;
+}
+
+header .button-container .external button:hover, header .button-container .external button:active {
+  background: #cc5b53;
+  color: #242327;
+  -webkit-animation: btn 0.1s linear forwards;
+          animation: btn 0.1s linear forwards;
+}
+
+.main {
+  margin: 0px 15%;
+}
+
+@-webkit-keyframes btn {
+  from {
+    border: 2px solid #cc5b53;
+    color: #242327;
+    background: #242327;
+  }
+  to {
+    border: 2px solid #cc5b53;
+    color: #242327;
+    background: #cc5b53;
+  }
+}
+
+@keyframes btn {
+  from {
+    border: 2px solid #cc5b53;
+    color: #242327;
+    background: #242327;
+  }
+  to {
+    border: 2px solid #cc5b53;
+    color: #242327;
+    background: #cc5b53;
+  }
+}
+/*# sourceMappingURL=style.css.map */
